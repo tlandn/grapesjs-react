@@ -94,11 +94,11 @@ const Editor = React.forwardRef(
               ...props.plugins,
             ],
           });
-          console.log("TCL: newEditor", newEditor)
+          // console.log('TCL: newEditor', newEditor);
           setEditor(newEditor);
-          console.log("TCL: editor", editor)
+          // console.log('TCL: editor', editor);
           if (onInit) {
-            onInit(editor);
+            onInit(newEditor);
           }
         }
         return handleCleanup;
