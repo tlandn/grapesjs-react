@@ -2,7 +2,7 @@ import GrapesJS from 'grapesjs';
 import mjml from 'grapesjs-mjml';
 import newsletter from 'grapesjs-preset-newsletter';
 import webpage from 'grapesjs-preset-webpage';
-import React, {ReactElement, Ref} from 'react';
+import React, { ReactElement, Ref } from 'react';
 
 const presets = {
   webpage,
@@ -94,7 +94,9 @@ const Editor = React.forwardRef(
               ...props.plugins,
             ],
           });
+          console.log("TCL: newEditor", newEditor)
           setEditor(newEditor);
+          console.log("TCL: editor", editor)
           if (onInit) {
             onInit(editor);
           }

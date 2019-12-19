@@ -14,13 +14,10 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "noEmit": true,
+    "noEmit": false,
     "noImplicitReturns": true,
     "noImplicitThis": false,
     "noUnusedLocals": true,
@@ -33,16 +30,8 @@
     "sourceMap": true,
     "strictNullChecks": false,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types/"
-    ]
+    "typeRoots": ["node_modules/@types/"]
   },
-  "exclude": [
-    "build/",
-    "dist/",
-    "node_modules/"
-  ],
-  "include": [
-    "src/grapesjs-react.tsx"
-  ]
+  "exclude": ["build/", "dist/", "node_modules/"],
+  "include": ["src/grapesjs-react.tsx"]
 }
